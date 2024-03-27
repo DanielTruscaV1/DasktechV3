@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  
+  abc
 </template>
 
 <style scoped>
