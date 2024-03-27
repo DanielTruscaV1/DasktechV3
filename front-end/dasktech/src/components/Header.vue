@@ -15,7 +15,7 @@
     {
         width:100vw;
         height:10vh;
-        background-color:var(--color2);
+        background-color:var(--color4);
         color:var(--color1);
         font-family:var(--font1);
     }

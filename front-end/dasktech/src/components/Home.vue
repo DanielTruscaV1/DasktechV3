@@ -12,7 +12,7 @@
   #container 
   {
     width:100vw;
-    height:90vh;
+    height:80vh;
     background-color:var(--color1);
     font-family:var(--font1);
   }
