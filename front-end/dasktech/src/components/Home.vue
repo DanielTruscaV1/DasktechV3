@@ -4,11 +4,18 @@
 
 <template>
   <div id="container">
-
+    ABC
   </div>
 </template>
 
 <style scoped>
+  #container 
+  {
+    width:100vw;
+    height:100vh;
+    background-color:var(--color1);
+    font-family:var(--font1);
+  }
   @media screen and (max-width:600px)
   {
 

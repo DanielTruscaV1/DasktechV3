@@ -1,0 +1,12 @@
+:root 
+{
+    --color1: white;
+    --color2: rgb(200, 150, 255);
+    --color3: rgb(170, 120, 225);
+    --color4: rgb(140, 90, 195);
+    --font1: "Reddit Mono", monospace;
+}
+body 
+{
+    margin:0px;
+}
