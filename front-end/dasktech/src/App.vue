@@ -7,8 +7,29 @@
   <Header/>
   <RouterView/>
   <Footer/>
-  <button>
-    <i class="material-icons">menu</i>
+  <button id="button1">
+    <i 
+      class="material-icons" 
+      style="font-size:30px"
+    >
+    menu
+    </i>
+  </button>
+  <button id="button2">
+    <i 
+      class="material-icons" 
+      style="font-size:30px"
+    >
+    arrow_back
+    </i>
+  </button>
+  <button id="button3">
+    <i 
+      class="material-icons" 
+      style="font-size:30px"
+    >
+    help
+    </i>
   </button>
 </template>
 
@@ -21,5 +42,33 @@
     background-color:var(--color2);
     color:var(--color1);
     border:none;
+    position:absolute;
+  }
+  #button1 
+  {
+    right:10px;
+    top:calc(10vh + 10px);
+  }
+  #button2
+  {
+    left:10px;
+    top:calc(10vh + 10px);
+  }
+  #button3
+  {
+    right:10px;
+    bottom:calc(10vh + 10px);
+  }
+  @media screen and (max-width:600px)
+  {
+    
+  }
+  @media screen and (min-width:600px)
+  {
+      button 
+      {
+        width:60px;
+        height:60px;
+      }
   }
 </style>
