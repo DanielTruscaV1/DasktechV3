@@ -22,7 +22,7 @@
     h1 
     {
         position:relative;
-        top:2vh;
+        top:2.5vh;
         margin-top:0px; 
         text-align:center;
     }
