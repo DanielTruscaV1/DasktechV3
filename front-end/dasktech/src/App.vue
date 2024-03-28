@@ -49,7 +49,9 @@
     help
     </i>
   </button>
-  <Navigation v-if="show_navigation"/>
+  <div v-if="show_navigation">
+    <Navigation/>
+  </div>
 </template>
 
 <style scoped>
