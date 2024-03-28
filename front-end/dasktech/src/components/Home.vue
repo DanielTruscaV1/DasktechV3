@@ -4,7 +4,7 @@
 
 <template>
   <div id="container">
-    ABC
+    
   </div>
 </template>
 

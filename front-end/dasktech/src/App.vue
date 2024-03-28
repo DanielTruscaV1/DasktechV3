@@ -1,6 +1,7 @@
 <script setup>
   import Header from "./components/Header.vue";
   import Footer from "./components/Footer.vue";
+  import Navigation from "./components/Navigation.vue";
 </script>
 
 <template>
@@ -31,6 +32,7 @@
     help
     </i>
   </button>
+  <Navigation/>
 </template>
 
 <style scoped>
@@ -43,6 +45,7 @@
     color:var(--color1);
     border:none;
     position:absolute;
+    z-index:2;
   }
   #button1 
   {
