@@ -2,18 +2,35 @@
   import Header from "./components/Header.vue";
   import Footer from "./components/Footer.vue";
   import Navigation from "./components/Navigation.vue";
+
+  import {ref} from "vue";
+
+  const show_navigation = ref(false);
+
+  function toggle_navigation() 
+  {
+      show_navigation.value = !show_navigation.value;
+  }
 </script>
 
 <template>
   <Header/>
   <RouterView/>
   <Footer/>
-  <button id="button1">
+  <button id="button1" @click="toggle_navigation">
     <i 
       class="material-icons" 
       style="font-size:30px"
+      v-if="!show_navigation"
     >
     menu
+    </i>
+    <i 
+      class="material-icons" 
+      style="font-size:30px"
+      v-if="show_navigation"
+    >
+    close
     </i>
   </button>
   <button id="button2">
@@ -32,7 +49,7 @@
     help
     </i>
   </button>
-  <Navigation/>
+  <Navigation v-if="show_navigation"/>
 </template>
 
 <style scoped>
