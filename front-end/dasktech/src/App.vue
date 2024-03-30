@@ -15,7 +15,7 @@
 
 <template>
   <Header/>
-  <RouterView/>
+  <router-view></router-view>
   <Footer/>
   <button id="button1" @click="toggle_navigation">
     <i 

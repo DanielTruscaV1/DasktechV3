@@ -7,16 +7,15 @@
     function go_to(path)
     {
         router.push({ name: "Subject1"})
-        
     }
 </script>
 
 <template>
   <div id="container">
     <div id="buttons">
-        <button @click="go_to('Subject')">
+        <router-link :to="{name: 'Subject1'}">
             Artificial Intelligence
-        </button>
+        </router-link>
     </div>
     
   </div>
