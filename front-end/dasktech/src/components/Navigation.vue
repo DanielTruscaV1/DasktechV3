@@ -1,19 +1,10 @@
 <script setup>
-    import { useRouter, useRoute } from 'vue-router';
-
-    const router = useRouter();
-    const route = useRoute();
-
-    function go_to(path)
-    {
-        router.push({ name: "Subject1"})
-    }
 </script>
 
 <template>
   <div id="container">
     <div id="buttons">
-        <router-link :to="{name: 'Subject1'}">
+        <router-link :to="{name: 'Subject'}">
             Artificial Intelligence
         </router-link>
     </div>
@@ -36,14 +27,16 @@
         margin-top:10vh;
         height:80vh;
     }
-    button 
+    a
     {
         width:100%;
         height:7%;
         font-size:16px;
+        font-family:var(--font1);
         background-color:transparent;
         color:var(--color1);
         border:none;
+        text-decoration:none;
     }
     @media screen and (max-width:600px)
     {

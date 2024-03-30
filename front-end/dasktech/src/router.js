@@ -10,8 +10,8 @@ const routes = [
       component: Home
     },
     { 
-      path: '/subject1', 
-      name:'Subject1',
+      path: '/subject', 
+      name:'Subject',
       component: Subject1
     },
 ]

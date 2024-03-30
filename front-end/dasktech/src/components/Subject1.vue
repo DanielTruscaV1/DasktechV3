@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  abcdjhendnqpwdpiq
+  Subject
 </template>
 
 <style scoped>
