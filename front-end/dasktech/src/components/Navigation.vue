@@ -16,6 +16,12 @@
         <router-link :to="{name: 'Subject'}">
             AI
         </router-link>
+        <router-link :to="{name: 'SignUp'}">
+            Sign-Up
+        </router-link>
+        <router-link :to="{name: 'SignIn'}">
+            Sign-In
+        </router-link>
     </div>
     
   </div>
