@@ -42,8 +42,9 @@
     }
     .article 
     {
-      width:100vw;
+      width:90vw;
       margin-top:30px;
+      margin-left:2.5vw;
       padding-top:20px;
       padding-bottom:20px;
       text-align:center;
@@ -59,9 +60,9 @@
     {
       .article 
       {
-        width:50vw;
+        width:20vw;
         margin-top:30px;
-        margin-left:calc(25vw - 50px);
+        margin-left:calc(40vw - 25px);
         padding-top:20px;
         padding-bottom:20px;
         text-align:center;

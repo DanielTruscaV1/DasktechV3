@@ -29,6 +29,7 @@
     }
     a
     {
+        display:inline-block;
         width:100%;
         height:7%;
         font-size:16px;
@@ -37,6 +38,7 @@
         color:var(--color1);
         border:none;
         text-decoration:none;
+        text-align:center;
     }
     @media screen and (max-width:600px)
     {
