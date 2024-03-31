@@ -65,6 +65,7 @@
     border:none;
     position:absolute;
     z-index:2;
+    box-shadow:4px 4px 4px rgb(200, 200, 200);
   }
   #button1 
   {

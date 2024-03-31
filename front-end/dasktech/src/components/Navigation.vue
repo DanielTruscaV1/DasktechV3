@@ -5,7 +5,16 @@
   <div id="container">
     <div id="buttons">
         <router-link :to="{name: 'Subject'}">
-            Artificial Intelligence
+            Home
+        </router-link>
+        <router-link :to="{name: 'Subject'}">
+            Software
+        </router-link>
+        <router-link :to="{name: 'Subject'}">
+            Hardware
+        </router-link>
+        <router-link :to="{name: 'Subject'}">
+            AI
         </router-link>
     </div>
     
@@ -32,7 +41,8 @@
         display:inline-block;
         width:100%;
         height:7%;
-        font-size:16px;
+        margin-top:30px;
+        font-size:14px;
         font-family:var(--font1);
         background-color:transparent;
         color:var(--color1);
@@ -54,6 +64,10 @@
             width:160px;
             height:80vh;
             background-color:var(--color3);
+        }
+        a 
+        {
+            font-size:18px;
         }
     }
 </style>
