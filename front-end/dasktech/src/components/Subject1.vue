@@ -9,10 +9,14 @@
     </h1>
     <div id="list">
       <div class="article">
-        What is Artificial Intelligence?
+        <router-link :to="{name: 'Article'}">
+          What is Artificial Intelligence?
+        </router-link>
       </div>
       <div class="article">
-        Types of AI
+        <router-link :to="{name: 'Article'}">
+          Types of AI
+        </router-link>
       </div>
     </div>
   </div>
@@ -45,12 +49,19 @@
       width:90vw;
       margin-top:30px;
       margin-left:2.5vw;
-      padding-top:20px;
-      padding-bottom:20px;
       text-align:center;
       background-color:var(--color2);
       color:var(--color1);
       border-left:10px solid var(--color4);
+    }
+    a 
+    {
+      display:inline-block;
+      padding:20px;
+      height:20px;
+      color:var(--color1);
+      text-decoration:none;
+      font-size:20px;
     }
     @media screen and (max-width:600px)
     {
