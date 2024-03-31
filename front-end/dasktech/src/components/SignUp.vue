@@ -35,7 +35,7 @@
     #container 
     {
         width:100vw;
-        height:90vh;   
+        height:80vh;   
         font-family:var(--font1);
     }
     #form 
@@ -79,11 +79,15 @@
     }
     @media screen and (max-width:600px)
     {
+        #title 
+        {
+            top:calc(15vw + 50px);
+        }
         #form 
         {
             width:90vw;
             height:60vh;
-            top:30vh;
+            top:25vh;
             left:5vw;
             border-bottom:10px solid var(--color4);
         }

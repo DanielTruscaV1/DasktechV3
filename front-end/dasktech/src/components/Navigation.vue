@@ -4,7 +4,7 @@
 <template>
   <div id="container">
     <div id="buttons">
-        <router-link :to="{name: 'Subject'}">
+        <router-link :to="{name: 'Home'}">
             Home
         </router-link>
         <router-link :to="{name: 'Subject'}">

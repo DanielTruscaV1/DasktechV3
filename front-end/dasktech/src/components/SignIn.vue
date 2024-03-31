@@ -27,7 +27,7 @@
     #container 
     {
         width:100vw;
-        height:90vh;   
+        height:80vh;   
         font-family:var(--font1);
     }
     #form 
