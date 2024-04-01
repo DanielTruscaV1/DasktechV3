@@ -20,8 +20,8 @@ app.get('/getArticles', async (req, res) => {
 
     const response = await client.query(
         q.Map(
-          q.Paginate(q.Match(q.Index('getTutorials'))),
-          q.Lambda('tutorialRef', q.Get(q.Var('tutorialRef')))
+          q.Paginate(q.Match(q.Index('getArticles'))),
+          q.Lambda('articleRef', q.Get(q.Var('articleRef')))
         )
       );
     res.send(JSON.stringify(response.data));

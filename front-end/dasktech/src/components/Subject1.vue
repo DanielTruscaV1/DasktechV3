@@ -1,5 +1,26 @@
 <script setup>
+import {ref} from "vue";
 
+const articles = ref([]);
+
+import axios from "axios";
+
+async function getArticle()
+{
+  const response = await axios.get(
+    `http://localhost:3000/getArticles`,
+    {
+      headers: 
+      {
+        'Content-Type': 'application/json',
+      },
+    },
+  )
+
+  articles.value = response.data;
+}
+
+getArticle();
 </script>
 
 <template>
@@ -8,15 +29,8 @@
       Artificial Intelligence
     </h1>
     <div id="list">
-      <div class="article">
-        <router-link :to="{name: 'Article'}">
-          What is Artificial Intelligence?
-        </router-link>
-      </div>
-      <div class="article">
-        <router-link :to="{name: 'Article'}">
-          Types of AI
-        </router-link>
+      <div v-for="article in articles" class="article">
+        {{ article.data.id }}
       </div>
     </div>
   </div>
@@ -47,6 +61,7 @@
     .article 
     {
       width:90vw;
+      height:30px;
       margin-top:30px;
       margin-left:2.5vw;
       text-align:center;
