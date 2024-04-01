@@ -13,6 +13,20 @@ const q = faunadb.query;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/getArticles', async (req, res) => {
+    const client = new faunadb.Client({
+        secret: process.env.VITE_FAUNADB_KEY,
+      });
+
+    const response = await client.query(
+        q.Map(
+          q.Paginate(q.Match(q.Index('getTutorials'))),
+          q.Lambda('tutorialRef', q.Get(q.Var('tutorialRef')))
+        )
+      );
+    res.send(JSON.stringify(response.data));
+  });
+
 app.listen(port, () => {
     console.log("The server is online.");
 });
