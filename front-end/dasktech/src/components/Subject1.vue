@@ -21,6 +21,17 @@ async function getArticle()
 }
 
 getArticle();
+
+import { useRouter, useRoute } from 'vue-router';
+
+const router = useRouter();
+const route = useRoute();
+
+function go_to(path)
+{
+    router.push(`${path}`);
+}
+
 </script>
 
 <template>
@@ -29,7 +40,11 @@ getArticle();
       Artificial Intelligence
     </h1>
     <div id="list">
-      <div v-for="article in articles" class="article">
+      <div 
+        v-for="article in articles"
+        class="article" 
+        @click="go_to('article')"
+      >
         {{ article.data.id }}
       </div>
     </div>
@@ -68,6 +83,7 @@ getArticle();
       background-color:var(--color2);
       color:var(--color1);
       border-left:10px solid var(--color4);
+      cursor:pointer;
     }
     a 
     {
