@@ -29,7 +29,7 @@ const route = useRoute();
 
 function go_to(path)
 {
-    router.push(`${path}`);
+    router.push(`/article/${path}`);
 }
 
 </script>
@@ -40,12 +40,13 @@ function go_to(path)
       Artificial Intelligence
     </h1>
     <div id="list">
-      <div 
-        v-for="article in articles"
-        class="article" 
-        @click="go_to('article')"
-      >
-        {{ article.data.id }}
+      <div v-for="(article, index) in articles">
+          <div 
+          class="article" 
+          @click="go_to(index+1)"
+        >
+          {{ article.data.id }} - {{ article.data.title }}
+        </div>
       </div>
     </div>
   </div>

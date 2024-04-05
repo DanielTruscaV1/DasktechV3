@@ -25,7 +25,22 @@ app.get('/getArticles', async (req, res) => {
         )
       );
     res.send(JSON.stringify(response.data));
-  });
+});
+
+app.get('/getArticle/:id', async (req, res) => {
+  const client = new faunadb.Client({
+      secret: process.env.VITE_FAUNADB_KEY,
+    });
+
+  const id = req.params.id;
+
+  console.log(id);
+
+  const response = await client.query(
+    q.Get(q.Match("getArticle", id))
+  )
+  res.send(JSON.stringify(response.data));
+});
 
 app.listen(port, () => {
     console.log("The server is online.");
