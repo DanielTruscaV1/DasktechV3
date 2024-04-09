@@ -79,7 +79,7 @@
   #button3
   {
     right:10px;
-    bottom:calc(10vh + 10px);
+    bottom:10px;
   }
   @media screen and (max-width:600px)
   {

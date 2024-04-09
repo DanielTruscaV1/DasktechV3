@@ -61,7 +61,7 @@ async function generateResponse()
   #container 
   {
     width:100vw;
-    height:80vh;
+    height:90vh;
     background-color:var(--color1);
     font-family:var(--font1);
   }

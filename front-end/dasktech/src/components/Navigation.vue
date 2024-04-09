@@ -35,7 +35,7 @@
         top:10vh;
         right:0px;
         width:70px;
-        height:80vh;
+        height:90vh;
         background-color:var(--color3);
     }
     #buttons
@@ -69,7 +69,7 @@
             top:10vh;
             right:0px;
             width:160px;
-            height:80vh;
+            height:90vh;
             background-color:var(--color3);
         }
         a 

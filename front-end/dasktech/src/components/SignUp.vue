@@ -35,7 +35,7 @@
     #container 
     {
         width:100vw;
-        height:80vh;   
+        height:90vh;   
         font-family:var(--font1);
     }
     #form 
@@ -47,7 +47,7 @@
     {
       width:100vw;
       position:absolute;
-      top:calc(10vh + 70px);
+      top:calc(0vh + 70px);
       text-align:center;
     }
     p 
@@ -81,13 +81,13 @@
     {
         #title 
         {
-            top:calc(15vw + 50px);
+            top:calc(0vw + 70px);
         }
         #form 
         {
             width:90vw;
-            height:60vh;
-            top:25vh;
+            height:70vh;
+            top:20vh;
             left:5vw;
             border-bottom:10px solid var(--color4);
         }
@@ -97,8 +97,8 @@
         #form 
         {
             width:30vw;
-            height:50vh;
-            top:30vh;
+            height:65vh;
+            top:20vh;
             left:35vw;
             border-bottom:20px solid var(--color4);
         }
