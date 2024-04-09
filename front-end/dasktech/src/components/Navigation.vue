@@ -23,6 +23,9 @@
         <router-link :to="{name: 'SignIn'}">
             Sign-In
         </router-link>
+        <router-link :to="{name: 'Profile'}">
+            Profile
+        </router-link>
     </div>
     
   </div>
